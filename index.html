@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./letterSelector.js"
+                type="text/javascript"></script>
+        <script src="./numberSelector.js"
+                type="text/javascript"></script>
+        <title>Countdown</title>
+    </head>
+    <body>
+        <section id="startGame">
+            <button id="start"
+                    onclick="startGame()"
+                    title="Start Game">
+                Start Game
+            </button>
+        </section>
+        <section id="letterButtons">
+            <button id="chooseConsonant"
+                    onclick="selectLetter('consonants')"
+                    title="Consonant">
+                Consonant
+            </button>
+            <button id="chooseVowel"
+                    onclick="selectLetter('vowels')"
+                    title="Vowel">
+                Vowel
+            </button>
+        </section>
+        <section id="letterDisplay">
+            <span>
+                
+            </span>
+        </section>
+        <section id="startNumbersGame">
+            <button id="startNumbers"
+                    onclick="startNumbersGame()"
+                    title="Start Numbers Game">
+                Start Numbers Game
+            </button>
+        </section>
+        <section id="numberButtons">
+            <button id="chooseLarge"
+                    onclick="selectNumber('large')"
+                    title="Large">
+                Large
+            </button>
+            <button id="chooseSmall"
+                    onclick="selectNumber('small')"
+                    title="Small">
+                Small
+            </button>
+        </section>
+        <section id="numberDisplay">
+            <span>
+                
+            </span>
+        </section>
+    </body>
+</html>

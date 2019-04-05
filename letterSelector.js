@@ -104,4 +104,21 @@ let printLetterSet = function() {
     letterStr += letterSet[i] + "|";
   }
   console.log(letterStr);
+  
 }
+
+
+let clock = 30;
+let countdown = function timer(){
+  let reset = setInterval(() => {
+    // Displays count down in button
+    document.getElementById('timer').innerHTML = clock;
+    clock--;
+    //Stops count down at 0
+    if (clock == -1) clearInterval(reset);
+  }, 1000);
+  //Resets clock for continued use
+  clock = 30;
+}
+
+
